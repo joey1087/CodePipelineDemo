@@ -17,8 +17,8 @@ export class PipelineDemoStack extends Stack {
                 actionName: "Github",
                 output: sourceArtifact,
                 oauthToken: SecretValue.secretsManager("github-token"),
-                owner: "Joey",
-                repo: "Repo",
+                owner: "joey1087",
+                repo: "CodePipelineDemo",
             }),
             synthAction: SimpleSynthAction.standardNpmSynth({
                 sourceArtifact: sourceArtifact,
